@@ -7,7 +7,11 @@ export default function YoutubeForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    window.location.href = `https://api-yuyudwon.herokuapp.com?url=${url}`
+    fetch(`https://api-yuyudwon.herokuapp.com`, {
+      method: 'POST'
+    }, {
+      url
+    }).then(res => res.json())
   }
 
   return (
