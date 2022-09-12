@@ -7,7 +7,7 @@ export default function YoutubeForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    window.location.href = `https://apiyuyudown.netlify.app/?url=${url}`
+    window.location.href = `https://api-yuyudwon.herokuapp.com?url=${url}`
   }
 
   return (
